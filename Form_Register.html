@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Register</title>
+</head>
+
+<body>
+    <h1>Zoo Keeper Application Form</h1>
+    <p><i>Please complete the form. Mandatory fields are marked with a*</i></p>
+    <fieldset>
+        <legend><b>CONTACT DETAILS</b></legend>
+        <label>Name * <input type="text" name="Name" size="30" maxlength="100" /></label><br />
+        <label>Telephone <input type="text" name="telephone" size="11" maxlength="100" /></label><br />
+        <label>Email * <input type="text" name="Email" size="30" maxlength="100" /></label>
+    </fieldset><br />
+
+    <fieldset>
+        <legend><b>PERSONAL INFORMATION</b></legend>
+        <label>* Age <input type="number" name="Age" size="2" maxlength="100"></label><br />
+        <label for="hear-about">Gender</label>
+        <select name=" referrer" id="hear-about">
+            <option value="Female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <p>
+            <label for="comment">When did you frist know you wanted to be a
+                zoo-keeper?
+            </label>
+            <textarea rows="5" cols="50" id="comments"></textarea>
+        </p>
+    </fieldset><br/>
+
+    <fieldset>
+        <legend><b>PICK YOUR FAVORITE ANIMALS</b></legend>
+        <label><input type="checkbox" name="Zebra" checked="checkbox"/>Zebra</label>
+        <label><input type="checkbox" name="Cat" checked=" checked"/>Cat</label>
+        <label><input type="checkbox" name="Anaconda" />Anaconda</label>
+        <label><input type="checkbox" name="Human" checked=" checked"/>Human</label>
+        <label><input type="checkbox" name="Elephant" checked="checkbox"/>Elephant</label><br/>
+        <label><input type="checkbox" name="Wildebeest" checked="checkbox"/>Wildebeest</label>
+        <label><input type="checkbox" name="Pigeon" checked="checkbox"/>Pigeon</label>
+        <label><input type="checkbox" name="Crab" checked="checkbox"/>Crab</label>
+    </fieldset>
+    <input type="submit" value="Submit Application"/>
+
+</body>
+
+</html>
